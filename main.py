@@ -1,5 +1,5 @@
 """
-Funktionen zum Bearbeiten eines JSON-basierten Kochbuchs.
+Funktionen  zum Bearbeiten eines JSON-basierten Kochbuchs.
 """
 import json
 
