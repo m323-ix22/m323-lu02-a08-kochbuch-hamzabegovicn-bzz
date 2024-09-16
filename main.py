@@ -4,10 +4,8 @@ import json
 Funktionen zum Bearbeiten eines JSON-basierten Kochbuchs.
 """
 
-
 def load_recipe(recipe_json: str) -> dict:
     return json.loads(recipe_json)
-
 
 def adjust_recipe(recipe: dict, persons: int) -> dict:
     factor = persons / recipe["servings"]
@@ -20,10 +18,8 @@ def adjust_recipe(recipe: dict, persons: int) -> dict:
         "servings": persons
     }
 
-
 if __name__ == '__main__':
-    recipe_json_data = ('{"title": "Spaghetti Bolognese", "ingredients": {"Spaghetti": 400, "Tomato Sauce": 300, '
-                        '"Minced Meat": 500}, "servings": 4}')
+    recipe_json_data = "{\"title\": \"Spaghetti Bolognese\", \"ingredients\": {\"Spaghetti\": 400, \"Tomato Sauce\": 300, \"Minced Meat\": 500}, \"servings\": 4}"
 
     new_persons = 2
 
