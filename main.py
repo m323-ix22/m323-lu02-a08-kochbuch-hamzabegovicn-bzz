@@ -1,7 +1,9 @@
 import json
+
 """
 Pure Function zum Laden des Rezepts von JSON zu Python-Dictionary
 """
+
 
 def load_recipe(recipe_json: str) -> dict:
     return json.loads(recipe_json)
@@ -20,7 +22,8 @@ def adjust_recipe(recipe: dict, num_persons: int) -> dict:
 
 
 if __name__ == '__main__':
-    recipe_json = '{"title": "Spaghetti Bolognese", "ingredients": {"Spaghetti": 400, "Tomato Sauce": 300, "Minced Meat": 500}, "servings": 4}'
+    recipe_json = ('{"title": "Spaghetti Bolognese", "ingredients": {"Spaghetti": 400, "Tomato Sauce": 300, '
+                   '"Minced Meat": 500}, "servings": 4}')
 
     num_persons = 2
 
